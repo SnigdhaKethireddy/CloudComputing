@@ -1,0 +1,6 @@
+Flask==0.12.1
+pypyodbc
+redis
+numpy
+matplotlib 
+sklearn

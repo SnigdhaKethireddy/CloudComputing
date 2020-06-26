@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <title>{% block title %}{% endblock %}  Home</title>
+    {% endblock %}
+</head>
+<body>
+<header>
+
+<h1>Snigdha
+1001757794    
+</h1>
+</header>
+<br>
+<p>
+    <form action="/largest5" method="post">
+       <b> Search for 5 largest earthquakes</b> <input type="submit" value="Search">
+    </form>
+    <br>
+    
+     <form action="/radi1" method="post">
+      <b>  The quakes occurred within 500 km of Arlington, Texas</b><input type="submit" value="search">
+    </form>
+    <br>
+    <form action="/magnitude" method="get">
+    <b> date from </b><input type="date" value="2020-06-01" name="datefrom" maxlength="200" width="60"> </br>
+      <br>  <b>date to </b> <input type="date"  value="2020-06-08" name="dateto" maxlength="200" width="60"> </br>
+
+     <br><b>   Number of Earthquakes occured of  magnitude greater than 3 from 1-8 june</b><input type="submit" value="search">
+    </form>
+    <br>
+    <form action="/ritcher" method="get">
+        <b> Date from </b><input type="date" value="2020-06-10" name="datefromritch" maxlength="200" width="60"> </br>
+         <br>  <b>Date to </b> <input type="date"  value="2020-06-12" name="datetoritch" maxlength="200" width="60"> </br>
+   
+         <br>  <b> Enter Magnitude on ritcher scale from </b><input type="number" name="magfrom" maxlength="200" width="60"> </br>
+       
+        <br>   <b> Enter Magnitude on ritcher scale to </b> <input type="number" name="magto" maxlength="200" width="60"> </br>
+           
+     <br>  <b>Number of Earthquakes occured  In most recent 3 days</b> <input type="submit" value="Search">
+       </form>
+    
+
+    <br>
+    <form action="/newsearch" method="get">
+<b>     Are Earthquakes more common within 1000 km of Anchorage (61 N, 150 W) than
+    Dallas (32.8 N, 96.8 W)?  
+     Search </b> <input type="submit" value="Search">
+    </form>
+    <br>
+     
+
+    <form action="/radi2" method="post">
+        <b>The largest quake occured within 200 km of Dallas </b><input type="submit" value="search">
+    </form>
+</p>
+
+ 
+</p>
+    
+
+
+</body>
+</html>

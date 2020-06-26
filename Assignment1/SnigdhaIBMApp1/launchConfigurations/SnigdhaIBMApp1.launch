@@ -1,0 +1,16 @@
+{
+  "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
+  "Params": {
+    "Target": {
+      "Url": "https://api.us-south.cf.cloud.ibm.com",
+      "Org": "snigdhasniggi96@gmail.com",
+      "Space": "dev"
+    },
+    "Name": "SnigdhaIBMApp1",
+    "Instrumentation": {
+      "domain": "mybluemix.net"
+    }
+  },
+  "Path": "manifest.yml",
+  "Type": "Cloud Foundry"
+}

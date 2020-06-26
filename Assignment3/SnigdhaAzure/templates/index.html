@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <title>{% block title %}{% endblock %}  Home</title>
+    {% endblock %}
+</head>
+<body>
+<header>
+<h1>
+   Snigdha Kethireddy
+ <br>  1001757794
+</h1>
+</header>
+<br>
+
+
+<b>Part1
+  <p>
+   <form action="/datemag" method="get">
+     Number of queries to run:<input type="text" name="num2" maxlength="300" width="100"></br>
+    <br>
+     <input type="submit" value="Time to Run queries without Cache"><br/><br/>
+  </form>
+  </p>
+  <p>
+   <form action="/dmagca" method="get">
+     Number of queries to run:<input type="text" name="num3" maxlength="300" width="100"></br>
+    <br>
+     <input type="submit" value="Time to Run queries with Cache"><br/><br/>
+  </form>
+  </p></b>
+  <hr>
+
+<b>Part2<br>
+<p>
+   <form action="/magnitu" method="get">
+      Date form<input type="date" name="datefrom1">
+      Date to<input type="date" name="dateto1">
+      <br>
+     Magnitude Range from<input type="text" name="rangefrom1" maxlength="300" width="100"> <br/>
+     <br>
+      Magnitude Range To<input type="text" name="rangeto1" maxlength="300" width="100"><br/>
+      <br>
+     Number of queries to run:<input type="text" name="num1" maxlength="300" width="100"></br>
+     <br>
+     <input type="submit" value="Time to run queries without Cache"><br/><br/>
+  </form>
+  </p>
+<p>
+   <form action="/magnituca" method="get">
+      Date form<input type="date" name="datefrom">
+      Date to<input type="date" name="dateto">
+      <br>
+     Magnitude Range from<input type="text" name="rangefrom" maxlength="300" width="100"> <br/>
+     <br>
+      Magnitude Range To<input type="text" name="rangeto" maxlength="300" width="100"><br/>
+      <br>
+     Number of queries to run:<input type="text" name="num" maxlength="300" width="100"></br>
+     <br>
+     <input type="submit" value="Time to run queries with Cache"><br/><br/>
+  </form>
+  </p></b>
+
+  
+
+
+
+
+</body>
+</html>

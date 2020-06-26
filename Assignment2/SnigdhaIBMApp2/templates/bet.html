@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <title>{% block title %}{% endblock %}  Home</title>
+    {% endblock %}
+</head>
+<body>
+<header>
+
+<h1>Snigdha
+1001757794
+</h1>
+</header>
+{% block content %}
+{% for ci in r %}
+<p><b>Dallas: {{ci}}</b></p>
+
+{% for d in f %}  
+<p><b>Anchorage: {{d}}</b></p>
+
+<b>The number of earth quakes within 1000kms of Anchorage: {{d}} is more than Dallas: {{ci}}</b>
+
+{% endfor %}
+{% endfor %}
+
+
+
+{% endblock %}
+
+</body>
+</html>
