@@ -1,3 +1,3 @@
 # ADBdocuments
 
-Clouds used are IBM, Azure
+Clouds used are IBM, Azure, AWS
